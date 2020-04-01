@@ -28,13 +28,7 @@ jobs:
         path: node_modules/
     
     - name: 'Download artifact'	
-      uses: konradpabjan/download-artifact@v2-preview
+      uses: hashtagchris/download-artifact@repro-failure
       with:	
         name: 'V1-Artifact'
-        path: download-dir
-    
-    - name: 'Upload artifact again'	
-      uses: konradpabjan/upload-artifact@v2-preview
-      with:	
-        name: 'V1-Artifact-again'
         path: download-dir
