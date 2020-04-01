@@ -28,7 +28,7 @@ jobs:
         path: node_modules/
     
     - name: 'Download artifact'	
-      uses: hashtagchris/download-artifact@repro-failure
+      uses: hashtagchris/download-artifact@testing
       with:	
         name: 'V1-Artifact'
         path: download-dir
