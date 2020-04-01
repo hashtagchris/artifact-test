@@ -32,3 +32,9 @@ jobs:
       with:	
         name: 'V1-Artifact'
         path: download-dir
+
+    - name: 'Upload artifact again'		
+      uses: actions/upload-artifact@v1	
+      with:		
+        name: 'V1-Artifact-again'	
+        path: download-dir
